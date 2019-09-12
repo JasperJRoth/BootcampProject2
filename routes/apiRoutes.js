@@ -1,24 +1,16 @@
-var db = require("../models");
+//var db = require("../models");
+var iNat = require("../apis/inaturalist.js");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
-    });
-  });
+  app.get("/api/getNearSightings", function(req, res) {
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
+    console.log(req.query.lat);
+    console.log(req.query.lng);
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+    iNat.getNearSightings(req.query.lat, req.query.lng).then(function(data){
+      res.send(data);
+      res.end();
     });
   });
 };
