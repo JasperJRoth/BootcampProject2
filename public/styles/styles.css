@@ -1,3 +1,5 @@
-.list-group-item {
-  line-height: 2.5;
+body{
+    background: url("../images/landscape.jpg") #add8e6;
+    background-attachment: fixed;
+    background-size: cover;
 }

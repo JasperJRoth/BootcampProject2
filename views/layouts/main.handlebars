@@ -3,13 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  {{!-- Jquery CDN --}}
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <!-- Materialize CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            
+  {{!-- FontAwesome CDN --}}
+  <script src="https://kit.fontawesome.com/be7411a50d.js"></script>
+
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+
+  {{!-- TODO change to name of app --}}
   <title>Home Page</title>
 </head>
 
 <body>
-  {{{body}}}
+  <nav>
+    <div class="nav-wrapper green darken-2">
+      <div class="container">
+        {{!-- TODO change to logo name --}}
+        <a href="/" class="brand-logo">LOGO</a>
+        <ul id="nav-mobile" class="right">
+          <li><a href="#">TEST1</a></li>
+          <li><a href="#">TEST2</a></li>
+          <li><a href="testtesttest">404</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <main>
+    {{{body}}}
+  </main>
+  {{!-- Materialize Scripts --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
