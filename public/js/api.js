@@ -14,5 +14,15 @@ var api = {
         console.log(res);
       });
     });
+  },
+  getCustomSightings: function(){
+    $.get("/api/getCustomSightings").then(function(res){
+      console.log(res);
+    });
+  },
+  postCustomSighting: function(name, howMany, lat, lng){
+    $.post("/api/postCustomSighting", {name: name, howMany: howMany, lat: lat, lng: lng}, function(res){
+      console.log(res);
+    })
   }
 }

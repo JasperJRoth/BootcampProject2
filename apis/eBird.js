@@ -12,7 +12,6 @@ module.exports = {
           "X-eBirdApiToken": process.env.eBirdToken
         }
       }).then(function(response){
-        console.log(response.data);
         resolve(response.data);
       }).catch(function(error){
         reject(error);
