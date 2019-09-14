@@ -9,10 +9,9 @@ module.exports = {
           lng: lng
         },
         headers: {
-          "X-eBirdApiToken": "egr0f1aubmpl"
+          "X-eBirdApiToken": process.env.eBirdToken
         }
       }).then(function(response){
-        console.log(response.data);
         resolve(response.data);
       }).catch(function(error){
         reject(error);
