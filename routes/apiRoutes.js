@@ -1,5 +1,5 @@
 //var db = require("../models");
-var iNat = require("../apis/inaturalist.js");
+var iNat = require("../apis/eBird.js");
 
 module.exports = function(app) {
   // Get all examples
