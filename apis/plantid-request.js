@@ -33,6 +33,6 @@ module.exports = {
 };
 
 // Then take the "ID" value from the JSON response object and assign as a variable
-var responseID = response.id;
+
 
 // HOW TO MERGE WITH RESPONSE CALL?
