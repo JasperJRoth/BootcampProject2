@@ -6,6 +6,14 @@ module.exports = function(app) {
     res.render("index");
   });
 
+  app.get("/birdMap", function(req, res) {
+    res.render("bird");
+  });
+
+  app.get("/plantMap", function(req, res) {
+    res.render("plant");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
