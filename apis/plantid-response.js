@@ -3,7 +3,7 @@
 var axios = require("axios");
 
 module.exports = {
-  getPlantIDResponse: async function(key, ids) {
+  getPlantIDResponse: async function(ids) {
     var promise = new Promise(function(resolve, reject){
       axios.post("https://api.plant.id/check_identifications", {
         params: {

@@ -9,7 +9,7 @@ console.log("Image converted to base 64 is:\n\n" + base64data);
 
 // Then send API POST request to Plant.ID to identify what's in the base64
 module.exports = {
-  sendPlantIDRequest: async function(key, lat, lng, images) {
+  sendPlantIDRequest: async function(lat, lng) {
     var promise = new Promise(function(resolve, reject){
       axios.post("https://api.plant.id/identify", {
         params: {
