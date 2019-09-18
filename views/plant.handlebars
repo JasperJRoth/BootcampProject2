@@ -1,19 +1,39 @@
-<div class="map-guide-wrapper">
-  <div class="map-guide">
-    <h2 class="header">Looking for Plants?</h2>
-    <div class="card horizontal">
-      <div class="birdMap">
-       {{!-- MAP GOES HERE --}}
+<div class="row">
+
+{{!-- Image Upload Card --}}
+  <div class="col s4" id="plantImageUploaded">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">Found a Cool Plant?</span>
+        <p>Upload it here! Please note that larger image files will take our program longer to identify, and multiple clear pictures will yield the most accurate results.</p>
       </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>This map plots the known locations of the plants you're hoping to espy!</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
+      <div class="card-action">
+        <input type="file" id="files" name="base64"/>
       </div>
-    </div>
     </div>
   </div>
+
+{{!-- Map Card --}}
+  <div class="col s8">
+    <div class="map-guide-wrapper">
+      <div class="map-guide">
+        <h2 class="header">Looking for Plants?</h2>
+        <div class="card horizontal">
+          <div class="birdMap">
+            {{!-- MAP GOES HERE --}}
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>This map plots the known locations of the plants you're hoping to espy!</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 <script src="/js/plant.js"></script>
