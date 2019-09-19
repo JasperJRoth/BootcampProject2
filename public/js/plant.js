@@ -1,3 +1,3 @@
-var plantIDRequest = require("../../apis/plantid.js");
+var plantIDRequest = require("../../apis/plantid");
 
 plantIDRequest.sendPlantIDRequest();
