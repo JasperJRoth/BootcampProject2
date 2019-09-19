@@ -7,13 +7,13 @@ var fs = require("fs");
 // var image = $("plant.handlebars").getElementById(imageToBase64);
 
 // Then convert image into base64
-var buff = fs.readFileSync("../public/images/landscape.jpg");
+var buff = fs.readFileSync("../images/garlic_mustard_flowering.jpg");
 var base64data = buff.toString("base64");
 console.log("Image converted to base 64 is:\n\n" + base64data);
 
 // Send API POST request to Plant.ID to identify what's in the base64
 module.exports = {
-  sendPlantIDRequest: async function(lat, lng) {
+  sendPlantIDRequest(lat, lng) {
     var promise = new Promise(function(resolve, reject) {
       axios.post("https://api.plant.id/identify", {
         params: {
