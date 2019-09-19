@@ -1,5 +1,72 @@
+
 body{
-    background: white;
-    background-attachment: fixed;
-    background-size: cover;
+  background: white;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+nav a{
+  color: #4CAF50;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em !important;
+}  
+.definition{
+  font-family: 'Montserrat';
+  font-size: .5em !important;
+  color: white;
+}
+
+.header{
+  font-family: 'Playfair Display', serif;
+  color:#4CAF50;
+  text-align: center;
+}
+.sidenav li {
+    white-space: nowrap;
+}
+
+.sidenav-overlay {
+  z-index: 2 !important;
+}
+
+.map-guide-wrapper {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-guide {
+  width: 100%;
+}
+
+#cardContainer{
+  box-align: center;
+}
+.card-content{
+  font-family: "Montserrat";
+  background-color:#c8e6c9;
+}
+
+.aboutUs{
+  font-size: 1.2em !important;
+}
+.card-title{
+  font-family:  'Playfair Display', serif;
+  font-size: 2.5em !important;
+}
+#plantImageUploaded{
+box-align: center;
+width: 70%;
+}
+#plant{
+  width:70%;
+}
+#bird{
+  width:70%;
 }
