@@ -1,13 +1,11 @@
-var plantIDRequest = require("../../apis/plantid-request");
-var plantIDResponse = require("../../apis/plantid-response");
-var fs = require("fs");
+// "use strict";
 
-// First grab image from plant.handlebars field
-var image = $("plant.handlebars").getElementById(imageToBase64);
+// var fs = require("fs");
+var plantIDRequest = require("../../apis/plantid");
 
-// Then convert image into base64
-var buff = fs.readFileSync(image);
-var base64data = buff.toString("base64");
-console.log("Image converted to base 64 is:\n\n" + base64data);
+// var buff = fs.readFileSync(image); // CHANGE THIS TO THE IMAGE VAR BEFORE PRESENTING
+// var base64data = buff.toString("base64");
+// console.log("Image converted to base 64 is:\n\n" + base64data);
 
-plantIDRequest.sendPlantIDRequest(base64data);
+plantIDRequest.sendPlantIDRequest("imgTest");
+// console.log(response.data[1].suggestions[0].plant.common_name);
