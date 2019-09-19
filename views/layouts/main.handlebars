@@ -17,41 +17,10 @@
   {{!-- Custom Imports --}}
   <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
   <script src="/js/api.js"></script>
+  <script src="/js/maps.js"></script>
+  
 
 </head>
-
-<style>    
-nav a{
-  color: green;
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5em !important;
-}  
-.definition{
-  font-family: 'Montserrat';
-  font-size: .5em !important;
-  color: white;
-}
-
-.sidenav li {
-    white-space: nowrap;
-}
-
-.sidenav-overlay {
-  z-index: 2 !important;
-}
-
-.map-guide-wrapper {
-  width:100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.map-guide {
-  width: 85%;
-}
-</style>
-
 <body>
    <div class="navbar-fixed">
   <nav>
@@ -79,6 +48,11 @@ nav a{
     {{{body}}}
   </main>
   {{!-- Materialize Scripts --}}
+
+   </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgf_gvbDZZS7sysDvgaBt51Uuc_1ECZM4&callback=initMap">
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script>
